@@ -100,3 +100,48 @@ body {
 
 	}
 }
+
+.overview {
+	&__title {
+		margin-bottom: 1rem;
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+	}
+
+}
+
+.updatecard {
+	background-color: $light-cardbg;
+	border-radius: 10px;
+	margin-bottom: 1rem;
+	padding: 1.5rem;
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 2rem;
+	}
+	&__label {
+
+	}
+	&__icon {
+
+	}
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__count {
+
+	}
+	&__updatebox {
+		display: flex;
+		align-items: center;
+	}
+	&__arrow {
+		margin-right: 0.5rem;
+	}
+}

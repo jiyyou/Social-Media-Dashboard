@@ -83,5 +83,37 @@ body {
 .followercard__arrowicon {
   margin-right: 0.5rem;
 }
+.overview__title {
+  margin-bottom: 1rem;
+}
+.overview__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.updatecard {
+  background-color: #f0f2fa;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  padding: 1.5rem;
+}
+.updatecard__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.updatecard__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.updatecard__updatebox {
+  display: flex;
+  align-items: center;
+}
+.updatecard__arrow {
+  margin-right: 0.5rem;
+}
 
 /*# sourceMappingURL=index.css.map */

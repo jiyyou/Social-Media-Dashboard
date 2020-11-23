@@ -8,80 +8,75 @@
   
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-
-  Social Media Dashboard
-  Total Followers: 23,004
-
-  Dark Mode
-
+  <section class='dashboard'>
+    <div class="header">
+      <div class="header__textbox">
+        <h1 class="header__title">Social Media Dashboard</h1>
+        <p class="header__description">Total Followers: 23,004</p>
+      </div>
+      <div class="header__toggledark">
+        <p class="header__togglelabel">Dark Mode</p>
+        <div class="header__togglebutton"></div>
+      </div>  
+    </div>
+    <ul class="dashboard__cardlist">
+      <li class="followercard">
+        <div class="followercard__decoline followercard__decoline--facebook"></div>
+        <div class="followercard__platformbox">
+          <img src="./images/icon-facebook.svg" alt="" class="followercard__icon">
+          <p class="followercard__user">@nathanf</p>  
+        </div>
+        <h2 class="followercard__followercount">1987</h2>
+        <p class="followercard__follower">F O L L O W E R S</p>
+        <div class="followercard__updatebox">
+          <img src="./images/icon-up.svg" alt="" class="followercard__arrowicon">
+          <p class="followercard__updatetext">12 Today</p>
+        </div>
+      </li>
+      <li class="followercard">
+        <div class="followercard__decoline followercard__decoline--twitter"></div>
+        <div class="followercard__platformbox">
+          <img src="./images/icon-twitter.svg" alt="" class="followercard__icon">
+          <p class="followercard__user">@nathanf</p>  
+        </div>
+        <h2 class="followercard__followercount">1044</h2>
+        <p class="followercard__follower">F O L L O W E R S</p>
+        <div class="followercard__updatebox">
+          <img src="./images/icon-up.svg" alt="" class="followercard__arrowicon">
+          <p class="followercard__updatetext">90 Today</p>
+        </div>
+      </li>
+      <li class="followercard">
+        <div class="followercard__decoline followercard__decoline--instagram"></div>
+        <div class="followercard__platformbox">
+          <img src="./images/icon-instagram.svg" alt="" class="followercard__icon">
+          <p class="followercard__user">@realnathanf</p>  
+        </div>
+        <h2 class="followercard__followercount">11k</h2>
+        <p class="followercard__follower">F O L L O W E R S</p>
+        <div class="followercard__updatebox">
+          <img src="./images/icon-up.svg" alt="" class="followercard__arrowicon">
+          <p class="followercard__updatetext">1099 Today</p>
+        </div>
+      </li>
+      <li class="followercard">
+        <div class="followercard__decoline followercard__decoline--youtube"></div>
+        <div class="followercard__platformbox">
+          <img src="./images/icon-youtube.svg" alt="" class="followercard__icon">
+          <p class="followercard__user">Nathan F.</p>  
+        </div>
+        <h2 class="followercard__followercount">8239</h2>
+        <p class="followercard__follower">S U B S C R I B E R S</p>
+        <div class="followercard__updatebox">
+          <img src="./images/icon-down.svg" alt="" class="followercard__arrowicon">
+          <p class="followercard__updatetext">144 Today</p>
+        </div>
+      </li>
+    </ul>    
+  </section>
   
-
-  @nathanf
-  1987
-  Followers
-  12 Today
-
-  @nathanf
-  1044
-  Followers
-  99 Today
-
-  @realnathanf
-  11k
-  Followers
-  1099 Today
-
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
-
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>

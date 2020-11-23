@@ -1,0 +1,93 @@
+$facebookblue: hsl(208, 92%, 53%);
+$twitterblue: hsl(203, 89%, 53%);
+$instagramgradient1: hsl(37, 97%, 70%);
+$instagramgradient2: hsl(329, 70%, 58%);
+$youtubered: hsl(348, 97%, 39%);
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+.dashboard {
+
+}
+.header {
+	display: flex;
+	flex-direction: column;
+	&__textbox {
+		border-bottom: 1px solid grey;
+		padding-bottom: 1rem;
+	}
+	&__toggledark {
+		padding: 1rem 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__togglelabel {
+		color: grey;
+	}
+	&__togglebutton {
+		width: 60px;
+		background-color: grey;
+		height: 20px;
+	}
+}
+.dashboard {
+	&__cardlist {
+		display: flex;
+		flex-direction: column;
+	}
+}
+.followercard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__decoline {
+		width: 100%;
+		height: 5px;
+		&--facebook {
+			background-image: linear-gradient(to right, $facebookblue, $facebookblue);
+		}
+		&--twitter {
+			background-image: linear-gradient(to right, $twitterblue, $twitterblue);
+		}
+		&--instagram {
+			background-image: linear-gradient(to right, $instagramgradient1, $instagramgradient2);
+		}
+		&--youtube {
+			background-image: linear-gradient(to right, $youtubered, $youtubered);
+		}
+	}
+	&__platformbox {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__icon {
+
+	}
+	&__user {
+
+	}
+	&__followercount {
+
+	}
+	&__follower {
+
+	}
+	&__updatebox {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__arrowicon {
+
+	}
+	&__updatetext {
+		
+	}
+}

@@ -5,6 +5,10 @@
   text-decoration: none;
 }
 
+body {
+  padding: 1rem;
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -37,6 +41,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 10px;
+  background-color: #f0f2fa;
+  overflow: hidden;
+  margin-bottom: 1rem;
 }
 .followercard__decoline {
   width: 100%;
@@ -58,11 +66,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 1rem 0;
+}
+.followercard__icon {
+  margin-right: 0.5rem;
+}
+.followercard__followercount {
+  margin-bottom: 1rem;
 }
 .followercard__updatebox {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 1rem 0;
+}
+.followercard__arrowicon {
+  margin-right: 0.5rem;
 }
 
 /*# sourceMappingURL=index.css.map */

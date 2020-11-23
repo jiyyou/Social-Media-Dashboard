@@ -1,3 +1,15 @@
+html {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,9 +25,20 @@ body {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 1440px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .header__textbox {
   border-bottom: 1px solid grey;
   padding-bottom: 1rem;
+}
+@media (min-width: 1440px) {
+  .header__textbox {
+    border: none;
+  }
 }
 .header__toggledark {
   padding: 1rem 0;
@@ -36,6 +59,12 @@ body {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 1440px) {
+  .dashboard__cardlist {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 
 .followercard {
   display: flex;
@@ -45,6 +74,11 @@ body {
   background-color: #f0f2fa;
   overflow: hidden;
   margin-bottom: 1rem;
+}
+@media (min-width: 1440px) {
+  .followercard {
+    width: 24%;
+  }
 }
 .followercard__decoline {
   width: 100%;
@@ -90,12 +124,24 @@ body {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 1440px) {
+  .overview__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 
 .updatecard {
   background-color: #f0f2fa;
   border-radius: 10px;
   margin-bottom: 1rem;
   padding: 1.5rem;
+}
+@media (min-width: 1440px) {
+  .updatecard {
+    width: 24%;
+  }
 }
 .updatecard__top {
   display: flex;

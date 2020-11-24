@@ -10,16 +10,18 @@
 
   <link rel="stylesheet" href="./index.css">
 </head>
-<body>
+<body class='body'>
   <section class='dashboard'>
     <div class="header">
       <div class="header__textbox">
-        <h1 class="header__title">Social Media Dashboard</h1>
-        <p class="header__description">Total Followers: 23,004</p>
+        <h1 class="header__title darktext">Social Media Dashboard</h1>
+        <p class="header__description lighttext">Total Followers: 23,004</p>
       </div>
-      <div class="header__toggledark">
+      <div class="header__toggledark darktext">
         <p class="header__togglelabel">Dark Mode</p>
-        <div class="header__togglebutton"></div>
+        <div class="header__togglebutton">
+          <div class="header__togglecircle"></div>
+        </div>
       </div>  
     </div>
     <ul class="dashboard__cardlist">
@@ -27,49 +29,49 @@
         <div class="followercard__decoline followercard__decoline--facebook"></div>
         <div class="followercard__platformbox">
           <img src="./images/icon-facebook.svg" alt="" class="followercard__icon">
-          <p class="followercard__user">@nathanf</p>  
+          <p class="followercard__user lighttext">@nathanf</p>  
         </div>
-        <h2 class="followercard__followercount">1987</h2>
-        <p class="followercard__follower">F O L L O W E R S</p>
+        <h2 class="followercard__followercount darktext">1987</h2>
+        <p class="followercard__follower lighttext">F O L L O W E R S</p>
         <div class="followercard__updatebox">
           <img src="./images/icon-up.svg" alt="" class="followercard__arrowicon">
-          <p class="followercard__updatetext">12 Today</p>
+          <p class="followercard__updatetext followercard__updatetext--up">12 Today</p>
         </div>
       </li>
       <li class="followercard">
         <div class="followercard__decoline followercard__decoline--twitter"></div>
         <div class="followercard__platformbox">
           <img src="./images/icon-twitter.svg" alt="" class="followercard__icon">
-          <p class="followercard__user">@nathanf</p>  
+          <p class="followercard__user lighttext">@nathanf</p>  
         </div>
-        <h2 class="followercard__followercount">1044</h2>
-        <p class="followercard__follower">F O L L O W E R S</p>
+        <h2 class="followercard__followercount darktext">1044</h2>
+        <p class="followercard__follower lighttext">F O L L O W E R S</p>
         <div class="followercard__updatebox">
           <img src="./images/icon-up.svg" alt="" class="followercard__arrowicon">
-          <p class="followercard__updatetext">90 Today</p>
+          <p class="followercard__updatetext followercard__updatetext--up">90 Today</p>
         </div>
       </li>
       <li class="followercard">
         <div class="followercard__decoline followercard__decoline--instagram"></div>
         <div class="followercard__platformbox">
           <img src="./images/icon-instagram.svg" alt="" class="followercard__icon">
-          <p class="followercard__user">@realnathanf</p>  
+          <p class="followercard__user lighttext">@realnathanf</p>  
         </div>
-        <h2 class="followercard__followercount">11k</h2>
-        <p class="followercard__follower">F O L L O W E R S</p>
+        <h2 class="followercard__followercount darktext">11k</h2>
+        <p class="followercard__follower lighttext">F O L L O W E R S</p>
         <div class="followercard__updatebox">
           <img src="./images/icon-up.svg" alt="" class="followercard__arrowicon">
-          <p class="followercard__updatetext">1099 Today</p>
+          <p class="followercard__updatetext followercard__updatetext--up">1099 Today</p>
         </div>
       </li>
       <li class="followercard">
         <div class="followercard__decoline followercard__decoline--youtube"></div>
         <div class="followercard__platformbox">
           <img src="./images/icon-youtube.svg" alt="" class="followercard__icon">
-          <p class="followercard__user">Nathan F.</p>  
+          <p class="followercard__user lighttext">Nathan F.</p>  
         </div>
-        <h2 class="followercard__followercount">8239</h2>
-        <p class="followercard__follower">S U B S C R I B E R S</p>
+        <h2 class="followercard__followercount darktext">8239</h2>
+        <p class="followercard__follower lighttext">S U B S C R I B E R S</p>
         <div class="followercard__updatebox">
           <img src="./images/icon-down.svg" alt="" class="followercard__arrowicon">
           <p class="followercard__updatetext">144 Today</p>
@@ -79,28 +81,28 @@
   </section>
 
   <section class="overview">
-    <h2 class="overview__title">Overview - Today</h2>
+    <h2 class="overview__title lighttext">Overview - Today</h2>
     <ul class="overview__list">
       <li class="updatecard">
         <div class="updatecard__top">
-          <p class="updatecard__label">Page Views</p>
+          <p class="updatecard__label lighttext">Page Views</p>
           <img src="./images/icon-facebook.svg" alt="" class="updatecard__icon">
         </div>
         <div class="updatecard__bottom">
-          <h4 class="updatecard__count">87</h4>
+          <h4 class="updatecard__count darktext">87</h4>
           <div class="updatecard__updatebox">
             <img src="./images/icon-up.svg" alt="" class="updatecard__arrow">
-            <p class="updatecard__updatenumber">3%</p>
+            <p class="updatecard__updatenumber updatecard__updatenumber--up">3%</p>
           </div>
         </div>
       </li>
       <li class="updatecard">
         <div class="updatecard__top">
-          <p class="updatecard__label">Likes</p>
+          <p class="updatecard__label lighttext">Likes</p>
           <img src="./images/icon-facebook.svg" alt="" class="updatecard__icon">
         </div>
         <div class="updatecard__bottom">
-          <h4 class="updatecard__count">52</h4>
+          <h4 class="updatecard__count darktext">52</h4>
           <div class="updatecard__updatebox">
             <img src="./images/icon-down.svg" alt="" class="updatecard__arrow">
             <p class="updatecard__updatenumber">2%</p>
@@ -109,63 +111,63 @@
       </li>
       <li class="updatecard">
         <div class="updatecard__top">
-          <p class="updatecard__label">Likes</p>
+          <p class="updatecard__label lighttext">Likes</p>
           <img src="./images/icon-instagram.svg" alt="" class="updatecard__icon">
         </div>
         <div class="updatecard__bottom">
-          <h4 class="updatecard__count">5462</h4>
+          <h4 class="updatecard__count darktext">5462</h4>
           <div class="updatecard__updatebox">
             <img src="./images/icon-up.svg" alt="" class="updatecard__arrow">
-            <p class="updatecard__updatenumber">2257%</p>
+            <p class="updatecard__updatenumber updatecard__updatenumber--up">2257%</p>
           </div>
         </div>
       </li>
       <li class="updatecard">
         <div class="updatecard__top">
-          <p class="updatecard__label">Profile Views</p>
+          <p class="updatecard__label lighttext">Profile Views</p>
           <img src="./images/icon-instagram.svg" alt="" class="updatecard__icon">
         </div>
         <div class="updatecard__bottom">
-          <h4 class="updatecard__count">52k</h4>
+          <h4 class="updatecard__count darktext">52k</h4>
           <div class="updatecard__updatebox">
             <img src="./images/icon-up.svg" alt="" class="updatecard__arrow">
-            <p class="updatecard__updatenumber">1375%</p>
+            <p class="updatecard__updatenumber updatecard__updatenumber--up">1375%</p>
           </div>
         </div>
       </li>
       <li class="updatecard">
         <div class="updatecard__top">
-          <p class="updatecard__label">Retweets</p>
+          <p class="updatecard__label lighttext">Retweets</p>
           <img src="./images/icon-twitter.svg" alt="" class="updatecard__icon">
         </div>
         <div class="updatecard__bottom">
-          <h4 class="updatecard__count">117</h4>
+          <h4 class="updatecard__count darktext">117</h4>
           <div class="updatecard__updatebox">
             <img src="./images/icon-up.svg" alt="" class="updatecard__arrow">
-            <p class="updatecard__updatenumber">303%</p>
+            <p class="updatecard__updatenumber updatecard__updatenumber--up">303%</p>
           </div>
         </div>
       </li>
       <li class="updatecard">
         <div class="updatecard__top">
-          <p class="updatecard__label">Likes</p>
+          <p class="updatecard__label lighttext">Likes</p>
           <img src="./images/icon-twitter.svg" alt="" class="updatecard__icon">
         </div>
         <div class="updatecard__bottom">
-          <h4 class="updatecard__count">117</h4>
+          <h4 class="updatecard__count darktext">117</h4>
           <div class="updatecard__updatebox">
             <img src="./images/icon-up.svg" alt="" class="updatecard__arrow">
-            <p class="updatecard__updatenumber">303%</p>
+            <p class="updatecard__updatenumber updatecard__updatenumber--up">303%</p>
           </div>
         </div>
       </li>
       <li class="updatecard">
         <div class="updatecard__top">
-          <p class="updatecard__label">Likes</p>
+          <p class="updatecard__label lighttext">Likes</p>
           <img src="./images/icon-youtube.svg" alt="" class="updatecard__icon">
         </div>
         <div class="updatecard__bottom">
-          <h4 class="updatecard__count">107</h4>
+          <h4 class="updatecard__count darktext">107</h4>
           <div class="updatecard__updatebox">
             <img src="./images/icon-down.svg" alt="" class="updatecard__arrow">
             <p class="updatecard__updatenumber">19%</p>
@@ -174,11 +176,11 @@
       </li>
       <li class="updatecard">
         <div class="updatecard__top">
-          <p class="updatecard__label">Total Views</p>
+          <p class="updatecard__label lighttext">Total Views</p>
           <img src="./images/icon-youtube.svg" alt="" class="updatecard__icon">
         </div>
         <div class="updatecard__bottom">
-          <h4 class="updatecard__count">1407</h4>
+          <h4 class="updatecard__count darktext">1407</h4>
           <div class="updatecard__updatebox">
             <img src="./images/icon-down.svg" alt="" class="updatecard__arrow">
             <p class="updatecard__updatenumber">12%</p>
@@ -187,5 +189,6 @@
       </li>      
     </ul>
   </section>
+  <script src='./script.js'></script>
 </body>
 </html>

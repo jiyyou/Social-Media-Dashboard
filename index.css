@@ -1,3 +1,17 @@
+.lighttext {
+  color: #63687e;
+}
+.lighttext--dark {
+  color: #8b97c6;
+}
+
+.darktext {
+  color: #1e202a;
+}
+.darktext--dark {
+  color: white;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -17,8 +31,17 @@ img {
   text-decoration: none;
 }
 
-body {
+.body {
   padding: 1rem;
+  background-color: white;
+}
+.body--dark {
+  background-color: #1e202a;
+}
+@media (min-width: 1440px) {
+  .body {
+    padding: 2rem 5rem;
+  }
 }
 
 .header {
@@ -47,12 +70,29 @@ body {
   align-items: center;
 }
 .header__togglelabel {
-  color: grey;
+  margin-right: 0.5rem;
 }
 .header__togglebutton {
-  width: 60px;
-  background-color: grey;
+  width: 37px;
+  background-image: linear-gradient(to right, #aeb3cb, #aeb3cb);
   height: 20px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 2px;
+}
+.header__togglebutton--dark {
+  background-image: linear-gradient(to right, #378fe6, #3eda82);
+  justify-content: flex-end;
+}
+.header__togglecircle {
+  height: 14.5px;
+  width: 14.5px;
+  border-radius: 100%;
+  background-color: white;
+}
+.header__togglecircle--dark {
+  background-color: #1e202a;
 }
 
 .dashboard__cardlist {
@@ -71,14 +111,23 @@ body {
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
-  background-color: #f0f2fa;
+  background-color: #f5f7ff;
   overflow: hidden;
   margin-bottom: 1rem;
+}
+.followercard:hover {
+  background-color: #f0f2fa;
 }
 @media (min-width: 1440px) {
   .followercard {
     width: 24%;
   }
+}
+.followercard--dark {
+  background-color: #252a41;
+}
+.followercard--dark:hover {
+  background-color: #3e4d74;
 }
 .followercard__decoline {
   width: 100%;
@@ -117,6 +166,13 @@ body {
 .followercard__arrowicon {
   margin-right: 0.5rem;
 }
+.followercard__updatetext {
+  color: #dc414c;
+}
+.followercard__updatetext--up {
+  color: #1db489;
+}
+
 .overview__title {
   margin-bottom: 1rem;
 }
@@ -133,15 +189,24 @@ body {
 }
 
 .updatecard {
-  background-color: #f0f2fa;
+  background-color: #f5f7ff;
   border-radius: 10px;
   margin-bottom: 1rem;
   padding: 1.5rem;
+}
+.updatecard:hover {
+  background-color: #f0f2fa;
 }
 @media (min-width: 1440px) {
   .updatecard {
     width: 24%;
   }
+}
+.updatecard--dark {
+  background-color: #252a41;
+}
+.updatecard--dark:hover {
+  background-color: #3e4d74;
 }
 .updatecard__top {
   display: flex;
@@ -160,6 +225,12 @@ body {
 }
 .updatecard__arrow {
   margin-right: 0.5rem;
+}
+.updatecard__updatenumber {
+  color: #dc414c;
+}
+.updatecard__updatenumber--up {
+  color: #1db489;
 }
 
 /*# sourceMappingURL=index.css.map */

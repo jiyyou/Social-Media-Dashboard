@@ -1,9 +1,38 @@
+//DECO LINE COLORS
 $facebookblue: hsl(208, 92%, 53%);
 $twitterblue: hsl(203, 89%, 53%);
 $instagramgradient1: hsl(37, 97%, 70%);
 $instagramgradient2: hsl(329, 70%, 58%);
 $youtubered: hsl(348, 97%, 39%);
-$light-cardbg: hsl(227, 47%, 96%);
+//CARD BACKGROUND COLOR
+$light-cardbg: hsl(225,100%, 98%);
+$light-cardbgactive: hsl(227, 47%, 96%);
+$dark-cardbg: hsl(228, 28%, 20%);
+$dark-cardbgactive: hsl(224, 30%, 35%);
+//BG COLOR
+$dark-bg: hsl(230, 17%, 14%);
+$light-bg: hsl(0, 0%, 100%);
+//TEXT COLOR
+$light-text: hsl(228, 12%, 44%);
+$light-emphtext: hsl(230, 17%, 14%);
+$dark-text: hsl(228, 34%, 66%);
+$dark-emphtext: hsl(0, 0%, 100%);
+//UPDATE TEXT
+$arrowup: hsl(163, 72%, 41%);
+$arrowdown: hsl(356, 69%, 56%);
+
+.lighttext {
+	color: $light-text;
+	&--dark {
+		color: $dark-text;
+	}
+}
+.darktext {
+	color: $light-emphtext;
+	&--dark {
+		color: $dark-emphtext;
+	}
+}
 
 @mixin desktop {
 	@media (min-width: 1440px) {
@@ -25,8 +54,15 @@ img {
 	list-style-type: none;
 	text-decoration: none;
 }
-body {
+.body {
 	padding: 1rem;
+	background-color: $light-bg;
+	&--dark {
+		background-color: $dark-bg;
+	}
+	@include desktop {
+		padding: 2rem 5rem;
+	}
 }
 .dashboard {
 
@@ -45,6 +81,12 @@ body {
 			border: none;
 		}
 	}
+	&__title {
+
+	}
+	&__description {
+
+	}
 	&__toggledark {
 		padding: 1rem 0;
 		display: flex;
@@ -52,12 +94,29 @@ body {
 		align-items: center;
 	}
 	&__togglelabel {
-		color: grey;
+		margin-right: 0.5rem;
 	}
 	&__togglebutton {
-		width: 60px;
-		background-color: grey;
+		width: 37px;
+		background-image: linear-gradient(to right, hsl(230, 22%, 74%), hsl(230, 22%, 74%));
 		height: 20px;
+		border-radius: 40px;
+		display: flex;
+		align-items: center;
+		padding: 0 2px;
+		&--dark {
+			background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+			justify-content: flex-end;
+		}
+	}
+	&__togglecircle {
+		height: 14.5px;
+		width: 14.5px;
+		border-radius: 100%;
+		background-color: white;
+		&--dark {
+			background-color: $dark-bg;
+		}
 	}
 }
 .dashboard {
@@ -78,8 +137,17 @@ body {
 	background-color: $light-cardbg;
 	overflow: hidden;
 	margin-bottom: 1rem;
+	&:hover {
+		background-color: $light-cardbgactive;
+	}
 	@include desktop {
 		width: 24%;
+	}
+	&--dark {
+		background-color: $dark-cardbg;
+		&:hover {
+			background-color: $dark-cardbgactive;
+		}
 	}
 	&__decoline {
 		width: 100%;
@@ -125,7 +193,10 @@ body {
 		margin-right: 0.5rem;
 	}
 	&__updatetext {
-
+		color: $arrowdown;
+		&--up {
+			color: $arrowup;
+		}
 	}
 }
 
@@ -150,8 +221,17 @@ body {
 	border-radius: 10px;
 	margin-bottom: 1rem;
 	padding: 1.5rem;
+	&:hover {
+		background-color: $light-cardbgactive;
+	}
 	@include desktop {
 		width: 24%;
+	}
+	&--dark {
+		background-color: $dark-cardbg;
+		&:hover {
+			background-color: $dark-cardbgactive;
+		}
 	}
 	&__top {
 		display: flex;
@@ -179,5 +259,11 @@ body {
 	}
 	&__arrow {
 		margin-right: 0.5rem;
+	}
+	&__updatenumber {
+		color: $arrowdown;
+		&--up {
+			color: $arrowup;
+		}
 	}
 }
